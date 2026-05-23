@@ -135,9 +135,9 @@ Pretrained models will be released soon.
 
 1. [Camouflaged Object Detection with Feature Decomposition and Edge Reconstruction](https://github.com/ChunmingHe/FEDER), CVPR 2023.
 
-2. RUN: Reversible Unfolding Network for Concealed Object Segmentation.
+2. [RUN: Reversible Unfolding Network for Concealed Object Segmentation](https://arxiv.org/abs/2501.18783).
 
-3. Frequency-Spatial Entanglement Learning for Camouflaged Object Detection.
+3. [Frequency-Spatial Entanglement Learning for Camouflaged Object Detection](https://github.com/CSYSI/FSEL).
 
 You can find more related papers in [awesome-concealed-object-segmentation](https://github.com/ChunmingHe/awesome-concealed-object-segmentation).
 
@@ -156,8 +156,8 @@ If you find our work useful in your research, please consider citing:
 
 ## Contact
 
-If you have any questions, please contact Fengyang Xiao at fengyang.xiao@duke.edu or Sina Farsiu at sina.farsiu@duke.edu.
+If you have any questions, please contact us via email at chunminghe19990224@gmail.com or chunming.he@duke.edu.
 
 ## Acknowledgement
 
-This repository follows the research code style of prior CECS/COD projects such as [FEDER](https://github.com/ChunmingHe/FEDER) and related open-source segmentation frameworks. We sincerely thank the authors for their valuable contributions to the community.
+This repository follows the research code style of prior CECS/COD projects such as [FEDER](https://github.com/ChunmingHe/FEDER), [RUN](https://arxiv.org/abs/2501.18783), and related open-source segmentation frameworks. We sincerely thank the authors for their valuable contributions to the community.

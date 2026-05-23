@@ -398,6 +398,16 @@ h3 {
   background: var(--bg);
 }
 
+.acknowledgement-section {
+  background:
+    linear-gradient(180deg, rgba(94, 234, 212, 0.06), rgba(96, 165, 250, 0.04)),
+    #0f131b;
+}
+
+.contact-section {
+  background: var(--bg);
+}
+
 .related-list {
   width: min(880px, 100%);
   margin: 0 auto;
