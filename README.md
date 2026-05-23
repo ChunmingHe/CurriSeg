@@ -2,7 +2,7 @@
 
 **Refining Context-Entangled Content Segmentation via Curriculum Selection and Anti-Curriculum Promotion**, ICML 2026
 
-[[Project Page](https://zrh-ahu.github.io/Curriseg/)] [[Paper](assets/paper.pdf)] [[Results](#results-download)] [[Pretrained models](#pretrained-models)]
+[[Project Page](https://zrh-ahu.github.io/Curriseg/)] [[Paper](assets/paper.pdf)] [[Pretrained models](#pretrained-models)]
 
 #### Authors
 [Chunming He](https://chunminghe.github.io/)\*, Rihan Zhang\*, Fengyang Xiao†, Dingming Zhang, Zhiwen Cao, Sina Farsiu†
@@ -87,7 +87,7 @@ YOUR_TESTINGSETPATH/
     GT/
 ```
 
-Common CECS/COD benchmarks can be obtained from their official project pages or the [awesome-camouflaged-object-detection](https://github.com/visionxiang/awesome-camouflaged-object-detection) collection.
+Common CECS/COD benchmarks can be obtained from their official project pages or the [awesome-concealed-object-segmentation](https://github.com/ChunmingHe/awesome-concealed-object-segmentation) collection.
 
 ### 3. Training Configuration
 
@@ -95,10 +95,6 @@ Run the curriculum selection phase:
 
 ```bash
 python Train.py \
-  --epoch 300 \
-  --lr 1e-4 \
-  --batchsize 36 \
-  --trainsize 384 \
   --train_root YOUR_TRAININGSETPATH \
   --val_root YOUR_VALIDATIONSETPATH \
   --save_path YOUR_CHECKPOINTPATH
@@ -108,10 +104,6 @@ Run the anti-curriculum promotion phase:
 
 ```bash
 python anti_curri_stage.py \
-  --epoch 100 \
-  --lr 5e-5 \
-  --batchsize 36 \
-  --trainsize 384 \
   --train_root YOUR_TRAININGSETPATH \
   --val_root YOUR_VALIDATIONSETPATH \
   --save_path YOUR_ANTI_CURRI_CHECKPOINTPATH \
@@ -125,7 +117,6 @@ The pretrained models will be released soon. After downloading a checkpoint, run
 
 ```bash
 python Test.py \
-  --testsize 384 \
   --pth_path YOUR_CHECKPOINTPATH/Net_epoch_best.pth \
   --test_dataset_path YOUR_TESTINGSETPATH
 ```
@@ -134,27 +125,21 @@ python Test.py \
 
 One-key evaluation for COD/CECS benchmarks can be performed with the public [CODToolbox](https://github.com/DengPingFan/CODToolbox). Please follow the instructions in `main.m` to compute standard metrics.
 
-<a id="results-download"></a>
-
-### 6. Results Download
-
-Prediction results will be released soon.
-
 <a id="pretrained-models"></a>
 
-### 7. Pretrained Models
+### 6. Pretrained Models
 
 Pretrained models will be released soon.
 
 ## Related Works
 
-[Camouflaged Object Detection with Feature Decomposition and Edge Reconstruction](https://github.com/ChunmingHe/FEDER), CVPR 2023.
+1. [Camouflaged Object Detection with Feature Decomposition and Edge Reconstruction](https://github.com/ChunmingHe/FEDER), CVPR 2023.
 
-[Feature Shrinkage Pyramid for Camouflaged Object Detection with Transformers](https://github.com/ZhouHuang23/FSPNet), CVPR 2023.
+2. RUN: Reversible Unfolding Network for Concealed Object Segmentation.
 
-[Concealed Object Detection](https://github.com/GewelsJI/SINet-V2), TPAMI 2022.
+3. Frequency-Spatial Entanglement Learning for Camouflaged Object Detection.
 
-You can find more related papers in [awesome-COD](https://github.com/visionxiang/awesome-camouflaged-object-detection).
+You can find more related papers in [awesome-concealed-object-segmentation](https://github.com/ChunmingHe/awesome-concealed-object-segmentation).
 
 ## Citation
 

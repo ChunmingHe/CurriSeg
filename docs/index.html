@@ -20,8 +20,9 @@
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#method">Method</a>
-        <a href="#results">Results</a>
+        <a href="#visuals">Visuals</a>
         <a href="#usage">Usage</a>
+        <a href="#related">Related</a>
         <a href="#citation">Citation</a>
       </nav>
     </header>
@@ -108,14 +109,14 @@
         </div>
       </section>
 
-      <section id="results" class="section contrast-section">
+      <section id="visuals" class="section contrast-section">
         <div class="section-heading reveal">
           <p class="eyebrow">Visual Comparison</p>
           <h2>Sharper masks across CECS scenarios.</h2>
           <p>CurriSeg improves baselines over camouflaged object detection, polyp image segmentation, transparent object detection, and concealed defect detection examples.</p>
         </div>
         <div class="comparison-frame reveal">
-          <img src="assets/visual_compare.png" alt="CurriSeg visual comparison results">
+          <img src="assets/visual_compare.png" alt="CurriSeg visual comparison">
         </div>
       </section>
 
@@ -123,7 +124,7 @@
         <div class="section-heading reveal">
           <p class="eyebrow">Usage</p>
           <h2>Research code layout.</h2>
-          <p>The repository provides PyTorch training, anti-curriculum fine-tuning, and testing scripts.</p>
+          <p>The repository provides PyTorch training, anti-curriculum fine-tuning, and testing scripts. Common CECS/COD benchmarks can be found in <a href="https://github.com/ChunmingHe/awesome-concealed-object-segmentation">awesome-concealed-object-segmentation</a>.</p>
         </div>
         <div class="code-grid reveal">
           <div class="code-panel">
@@ -131,8 +132,7 @@
               <i data-lucide="play"></i>
               <span>Train</span>
             </div>
-            <pre><code>python Train.py --epoch 300 --lr 1e-4 \
-  --batchsize 36 --trainsize 384 \
+            <pre><code>python Train.py \
   --train_root YOUR_TRAININGSETPATH \
   --val_root YOUR_VALIDATIONSETPATH \
   --save_path YOUR_CHECKPOINTPATH</code></pre>
@@ -142,8 +142,10 @@
               <i data-lucide="scan-line"></i>
               <span>Promote</span>
             </div>
-            <pre><code>python anti_curri_stage.py --epoch 100 \
-  --lr 5e-5 --batchsize 36 --trainsize 384 \
+            <pre><code>python anti_curri_stage.py \
+  --train_root YOUR_TRAININGSETPATH \
+  --val_root YOUR_VALIDATIONSETPATH \
+  --save_path YOUR_ANTI_CURRI_CHECKPOINTPATH \
   --load YOUR_CHECKPOINTPATH/Net_epoch_best.pth \
   --use_sbft</code></pre>
           </div>
@@ -152,25 +154,35 @@
               <i data-lucide="check-circle"></i>
               <span>Test</span>
             </div>
-            <pre><code>python Test.py --testsize 384 \
+            <pre><code>python Test.py \
   --pth_path YOUR_CHECKPOINTPATH/Net_epoch_best.pth \
   --test_dataset_path YOUR_TESTINGSETPATH</code></pre>
           </div>
         </div>
       </section>
 
+      <section id="related" class="section related-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Related Works</p>
+          <h2>Context for CurriSeg.</h2>
+          <p>CurriSeg builds on recent progress in concealed and camouflaged object segmentation.</p>
+        </div>
+        <div class="related-list reveal">
+          <a href="https://github.com/ChunmingHe/FEDER">Camouflaged Object Detection with Feature Decomposition and Edge Reconstruction, CVPR 2023.</a>
+          <span>RUN: Reversible Unfolding Network for Concealed Object Segmentation.</span>
+          <span>Frequency-Spatial Entanglement Learning for Camouflaged Object Detection.</span>
+          <a href="https://github.com/ChunmingHe/awesome-concealed-object-segmentation">More related papers in awesome-concealed-object-segmentation.</a>
+        </div>
+      </section>
+
       <section id="resources" class="resource-band">
         <div class="resource-content reveal">
           <p class="eyebrow">Resources</p>
-          <h2>Paper available now. Results and models coming soon.</h2>
+          <h2>Paper available now. Models coming soon.</h2>
           <div class="resource-actions">
             <a class="action primary" href="assets/paper.pdf">
               <i data-lucide="file-text"></i>
               <span>Read Paper</span>
-            </a>
-            <a class="action muted" href="#resources">
-              <i data-lucide="folder-down"></i>
-              <span>Results Soon</span>
             </a>
             <a class="action muted" href="#resources">
               <i data-lucide="package-open"></i>
