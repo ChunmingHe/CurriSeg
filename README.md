@@ -2,7 +2,7 @@
 
 **Refining Context-Entangled Content Segmentation via Curriculum Selection and Anti-Curriculum Promotion**, ICML 2026
 
-[[Project Page](https://zrh-ahu.github.io/Curriseg/)] [[Paper](assets/paper.pdf)] [[Pretrained models](#pretrained-models)]
+[[Project Page](https://zrh-ahu.github.io/Curriseg/)] [[Paper](assets/paper.pdf)] [[Pretrained models](https://drive.google.com/drive/folders/1lxplDrCk84zgB-FQaJAvxcvyKBGenqA_?usp=sharing)]
 
 #### Authors
 [Chunming He](https://chunminghe.github.io/)\*, Rihan Zhang\*, Fengyang Xiao†, Dingming Zhang, Zhiwen Cao, Sina Farsiu†
@@ -113,7 +113,7 @@ python anti_curri_stage.py \
 
 ### 4. Testing Configuration
 
-The pretrained models will be released soon. After downloading a checkpoint, run:
+The pretrained models are available on [Google Drive](https://drive.google.com/drive/folders/1lxplDrCk84zgB-FQaJAvxcvyKBGenqA_?usp=sharing). After downloading a checkpoint, run:
 
 ```bash
 python Test.py \
@@ -129,15 +129,15 @@ One-key evaluation for COD/CECS benchmarks can be performed with the public [COD
 
 ### 6. Pretrained Models
 
-Pretrained models will be released soon.
+Pretrained models are available on [Google Drive](https://drive.google.com/drive/folders/1lxplDrCk84zgB-FQaJAvxcvyKBGenqA_?usp=sharing).
 
 ## Related Works
 
 1. [Camouflaged Object Detection with Feature Decomposition and Edge Reconstruction](https://github.com/ChunmingHe/FEDER), CVPR 2023.
 
-2. [RUN: Reversible Unfolding Network for Concealed Object Segmentation](https://arxiv.org/abs/2501.18783).
+2. [RUN: Reversible Unfolding Network for Concealed Object Segmentation](https://github.com/ChunmingHe/RUN), ICML 2025.
 
-3. [Frequency-Spatial Entanglement Learning for Camouflaged Object Detection](https://github.com/CSYSI/FSEL).
+3. [Frequency-Spatial Entanglement Learning for Camouflaged Object Detection](https://github.com/CSYSI/FSEL), ECCV 2024.
 
 You can find more related papers in [awesome-concealed-object-segmentation](https://github.com/ChunmingHe/awesome-concealed-object-segmentation).
 
@@ -160,4 +160,4 @@ If you have any questions, please contact us via email at chunminghe19990224@gma
 
 ## Acknowledgement
 
-This repository follows the research code style of prior CECS/COD projects such as [FEDER](https://github.com/ChunmingHe/FEDER), [RUN](https://arxiv.org/abs/2501.18783), and related open-source segmentation frameworks. We sincerely thank the authors for their valuable contributions to the community.
+This repository follows the research code style of prior CECS/COD projects such as [FEDER](https://github.com/ChunmingHe/FEDER), [RUN](https://github.com/ChunmingHe/RUN), and related open-source segmentation frameworks. We sincerely thank the authors for their valuable contributions to the community.
