@@ -32,7 +32,7 @@ Duke University, Adobe
 ## Visual Comparison
 
 <p align="center">
-  <img width="900" src="assets/visual_compare.png" alt="CurriSeg visual comparison">
+  <img width="1000" src="assets/visual_compare.png" alt="CurriSeg visual comparison">
 </p>
 
 ## Usage
