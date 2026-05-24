@@ -10,7 +10,7 @@
 \* Equal contribution. † Corresponding authors.
 
 #### Affiliations
-Duke University, Adob
+Duke University, Adobe
 
 ---
 
