@@ -14,7 +14,7 @@ from tensorboardX import SummaryWriter
 
 from lib.Network import Network
 from utils.data_val import get_loader, test_dataset
-from utils.utils import clip_gradient, get_coef, cal_ual
+from utils.utils import clip_gradient, get_coef, cal_ua
 
 
 # -----------------------------
